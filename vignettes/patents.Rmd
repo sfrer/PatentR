@@ -1,0 +1,34 @@
+---
+title: "Introduction to patents"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Introduction to patents}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+The `patents` package contains a public F41 patent dataset from USPTO and 4 functions to clean and analyze the dataset. 
+
+**Dataset**:
+
+* `patent_data`: A dataset containing 11 columns and 51232 rows. 
+
+
+**Functions**:
+
+* `check_frequency` function checks the frequency of a column in the dataset.
+* `clean_by` function cleans the dataset by a specified column.
+* `freq_by_group` function checks the frequency of a column by groups.
+* `separate_category` function separates the dataset into categories by columns.
+
+```{r example}
+library(patents)
+data('patent_data')
+x1=clean_by(patent_data, "inventorState")
+```

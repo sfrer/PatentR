@@ -1,0 +1,26 @@
+Package: patents
+Title: Functions for patents. 
+Version: 0.0.0.9000
+Authors@R: 
+    person("Simin", "Liu", , "sliu02@wesleyan.edu", role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+    person("Patton", "Yin", , "pyin@wesleyan.edu", role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: Functions for patents. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
+Depends: 
+    R (>= 2.10)
+LazyData: true
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
+Imports: 
+    dplyr,
+    ggplot2,
+    stringr,
+    tidyr, 
+    tidyverse
