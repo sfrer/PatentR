@@ -17,7 +17,7 @@ freq_by_group(
 \arguments{
 \item{dataset}{The dataset to use.}
 
-\item{group}{The name of the column to group by. Not a character input. Use the column name directly.}
+\item{group}{The name of the column to group by.}
 
 \item{column}{The name of the column to look at.}
 
@@ -41,5 +41,5 @@ The function also plots the frequency table by groups.
 library(patents)
 data('patent_data')
 x1=clean_by(patent_data, "inventorState")
-x1=freq_by_group(x1, inventorState, "inventorsName", graph=FALSE)
+x1=freq_by_group(x1, "inventorState", "inventorsName", graph=FALSE)
 }

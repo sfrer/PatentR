@@ -13,7 +13,7 @@ knitr::opts_chunk$set(
   comment = "#>"
 )
 ```
-The `patents` package contains a public F41 patent dataset from USPTO and 4 functions to clean and analyze the dataset. 
+The `patents` package contains a public F41 patent dataset from USPTO and 6 functions to clean and analyze the dataset. 
 
 **Dataset**:
 
@@ -26,6 +26,8 @@ The `patents` package contains a public F41 patent dataset from USPTO and 4 func
 * `clean_by` function cleans the dataset by a specified column.
 * `freq_by_group` function checks the frequency of a column by groups.
 * `separate_category` function separates the dataset into categories by columns.
+* `dummy_by_condition` function creates dummy variables by a condition.
+* `dummy_by_date` function creates dummy variables by date.
 
 ```{r example}
 library(patents)
